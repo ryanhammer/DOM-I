@@ -39,16 +39,32 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-console.log(logo);
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Update the navigation menu
 const nav = document.querySelector("nav");
-nav.firstChild.textContent = siteContent["nav"]["nav-item-1"];
+nav.children[0].textContent = siteContent["nav"]["nav-item-1"];
 nav.children[1].textContent = siteContent["nav"]["nav-item-2"];
 nav.children[2].textContent = siteContent["nav"]["nav-item-3"];
 nav.children[3].textContent = siteContent["nav"]["nav-item-4"];
 nav.children[4].textContent = siteContent["nav"]["nav-item-5"];
 nav.children[5].textContent = siteContent["nav"]["nav-item-6"];
 
-// Update 
+// Update main header
+const headerOne = document.querySelector("h1");
+headerOne.textContent = siteContent["cta"]["h1"];
+
+// Update top image
+const headerImage = document.getElementById("cta-img");
+headerImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// Update button
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
+
+// Update section img
+const sectionImage = document.getElementById("middle-img");
+sectionImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+// Update main text content
+const sectionTitle = document.querySelector("h4");
