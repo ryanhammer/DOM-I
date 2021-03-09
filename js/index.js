@@ -101,3 +101,18 @@ const footer = document.querySelector("footer");
 const footerText = footer.querySelector("p");
 footerText.textContent = siteContent["footer"]["copyright"];
 
+// Add new links to the navigation system
+const blogLink = document.createElement("a");
+blogLink.textContent = "Blog";
+blogLink.href = "#";
+document.querySelector("nav").appendChild(blogLink);
+const homeLink = document.createElement("a");
+homeLink.textContent = "Home";
+blogLink.href = "#";
+document.querySelector("nav").prepend(homeLink);
+
+// Change navigation text to green
+for (i = 0; i < nav.children.length; i++) {
+    nav.children[i].style.color = "green";
+}
+
