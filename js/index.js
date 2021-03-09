@@ -97,5 +97,7 @@ contactTextArray[1].textContent = siteContent["contact"]["phone"];
 contactTextArray[2].textContent = siteContent["contact"]["email"];
 
 // Update footer section
-
+const footer = document.querySelector("footer");
+const footerText = footer.querySelector("p");
+footerText.textContent = siteContent["footer"]["copyright"];
 
