@@ -39,4 +39,80 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// Update the navigation menu
+const nav = document.querySelector("nav");
+nav.children[0].textContent = siteContent["nav"]["nav-item-1"];
+nav.children[1].textContent = siteContent["nav"]["nav-item-2"];
+nav.children[2].textContent = siteContent["nav"]["nav-item-3"];
+nav.children[3].textContent = siteContent["nav"]["nav-item-4"];
+nav.children[4].textContent = siteContent["nav"]["nav-item-5"];
+nav.children[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// Update main header
+const headerOne = document.querySelector("h1");
+headerOne.textContent = siteContent["cta"]["h1"];
+
+// Update top image
+const headerImage = document.getElementById("cta-img");
+headerImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// Update button
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
+
+// Update section img
+const sectionImage = document.getElementById("middle-img");
+sectionImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+// Update main section headers
+const mainContent = document.querySelector(".main-content");
+const sectionTitle = mainContent.querySelectorAll("h4");
+const sectionHeaderArray = Array.from(sectionTitle);
+sectionHeaderArray[0].textContent = siteContent["main-content"]["features-h4"];
+sectionHeaderArray[1].textContent = siteContent["main-content"]["about-h4"];
+sectionHeaderArray[2].textContent = siteContent["main-content"]["services-h4"];
+sectionHeaderArray[3].textContent = siteContent["main-content"]["product-h4"];
+sectionHeaderArray[4].textContent = siteContent["main-content"]["vision-h4"];
+
+// Update main section text
+const mainText = mainContent.querySelectorAll("p");
+const sectionTextArray = Array.from(mainText);
+sectionTextArray[0].textContent = siteContent["main-content"]["features-content"];
+sectionTextArray[1].textContent = siteContent["main-content"]["about-content"];
+sectionTextArray[2].textContent = siteContent["main-content"]["services-content"];
+sectionTextArray[3].textContent = siteContent["main-content"]["product-content"];
+sectionTextArray[4].textContent = siteContent["main-content"]["vision-content"];
+
+// Update contact section header
+const contact = document.querySelector(".contact");
+const contactHeader = contact.querySelector("h4");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+// Update contact section text
+const contactTextArray = Array.from(contact.querySelectorAll("p"));
+contactTextArray[0].textContent = siteContent["contact"]["address"];
+contactTextArray[1].textContent = siteContent["contact"]["phone"];
+contactTextArray[2].textContent = siteContent["contact"]["email"];
+
+// Update footer section
+const footer = document.querySelector("footer");
+const footerText = footer.querySelector("p");
+footerText.textContent = siteContent["footer"]["copyright"];
+
+// Add new links to the navigation system
+const blogLink = document.createElement("a");
+blogLink.textContent = "Blog";
+blogLink.href = "#";
+document.querySelector("nav").appendChild(blogLink);
+const homeLink = document.createElement("a");
+homeLink.textContent = "Home";
+blogLink.href = "#";
+document.querySelector("nav").prepend(homeLink);
+
+// Change navigation text to green
+for (i = 0; i < nav.children.length; i++) {
+    nav.children[i].style.color = "green";
+}
+
