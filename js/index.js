@@ -70,19 +70,19 @@ sectionImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 const mainContent = document.querySelector(".main-content");
 const sectionTitle = mainContent.querySelectorAll("h4");
 const sectionHeaderArray = Array.from(sectionTitle);
-sectionHeaderArray[0].textContent = siteContent["main-content"]["about-h4"];
-sectionHeaderArray[1].textContent = siteContent["main-content"]["features-h4"];
-sectionHeaderArray[2].textContent = siteContent["main-content"]["product-h4"];
-sectionHeaderArray[3].textContent = siteContent["main-content"]["services-h4"];
+sectionHeaderArray[0].textContent = siteContent["main-content"]["features-h4"];
+sectionHeaderArray[1].textContent = siteContent["main-content"]["about-h4"];
+sectionHeaderArray[2].textContent = siteContent["main-content"]["services-h4"];
+sectionHeaderArray[3].textContent = siteContent["main-content"]["product-h4"];
 sectionHeaderArray[4].textContent = siteContent["main-content"]["vision-h4"];
 
 // Update main section text
 const mainText = mainContent.querySelectorAll("p");
 const sectionTextArray = Array.from(mainText);
-sectionTextArray[0].textContent = siteContent["main-content"]["about-content"];
-sectionTextArray[1].textContent = siteContent["main-content"]["features-content"];
-sectionTextArray[2].textContent = siteContent["main-content"]["product-content"];
-sectionTextArray[3].textContent = siteContent["main-content"]["services-content"];
+sectionTextArray[0].textContent = siteContent["main-content"]["features-content"];
+sectionTextArray[1].textContent = siteContent["main-content"]["about-content"];
+sectionTextArray[2].textContent = siteContent["main-content"]["services-content"];
+sectionTextArray[3].textContent = siteContent["main-content"]["product-content"];
 sectionTextArray[4].textContent = siteContent["main-content"]["vision-content"];
 
 // Update contact section header
