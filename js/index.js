@@ -85,3 +85,17 @@ sectionTextArray[2].textContent = siteContent["main-content"]["product-content"]
 sectionTextArray[3].textContent = siteContent["main-content"]["services-content"];
 sectionTextArray[4].textContent = siteContent["main-content"]["vision-content"];
 
+// Update contact section header
+const contact = document.querySelector(".contact");
+const contactHeader = contact.querySelector("h4");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+// Update contact section text
+const contactTextArray = Array.from(contact.querySelectorAll("p"));
+contactTextArray[0].textContent = siteContent["contact"]["address"];
+contactTextArray[1].textContent = siteContent["contact"]["phone"];
+contactTextArray[2].textContent = siteContent["contact"]["email"];
+
+// Update footer section
+
+
